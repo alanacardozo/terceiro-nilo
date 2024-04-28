@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
-    
+
     :root {
         --cor-de-fundo: #18b3e2f3;
         --verde: #6FFF57;
@@ -9,17 +9,14 @@
         --texto-fundo: rgba(58, 55, 94, 0.3);
     }
 
-   
-
 body{
-    
-       
-        color: rgb(0, 0, 0);
-        background-color: var(--cor-de-fundo);
-        color: var(--branco);
-        font-family: 'Chakra Petch', sans-serif;
-      
+
+ background-color: var(--cor-de-fundo);
+ color: var(--branco);
+ font-family: 'Chakra Petch', sans-serif;
+
 }
+
 .conteudo-principal {
     display: flex;
     flex-direction: column;
@@ -33,7 +30,7 @@ body{
 .titulo-principal  {
     text-align: center;
     width: 100%;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .titulo-principal span{
@@ -55,16 +52,58 @@ body{
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
-    border-bottom: 4px solid var(--botao-ativo); 
-    border-left: 2px solid var(--botao-ativo); 
-    border-right: 2px solid var(--botao-ativo); 
-    border-top: none;
+  
 }
 
 .botoes {
     display: block;
 }
 
+
+.botao.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+    }
+
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+    display: block;
+}
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+.contador{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contador-digito{
+  padding: 0 16px;
+  text-align: center;
+  min-width: 100px;
+}
+.contador-digito-número{
+  font-size: 80px;
+  margin: 0;
+}
+.contador-digito-texto{
+  color: var(--verde);
+  font-size: 20px;
+  margin: 0;
+}
 @media screen and (min-width: 768px) {
     .botoes {
         display: flex;
@@ -79,12 +118,10 @@ body{
     }
 }
 
-.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-    }
 
-    const botoes = document.querySelectorAll(".botao");
+
+
+
 
 
 
